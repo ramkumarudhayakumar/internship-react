@@ -1,11 +1,15 @@
 import { useState } from "react";
 import "./App.css";
+import Login from "./components/Login";
 
 function App() {
   const [overlap, setOverlap] = useState(true);
+  const head = "HI HELLOE WELCOME";
+
   function circleHandler() {
     setOverlap(!overlap);
   }
+
   return (
     <div className="App">
       <div className="circle-head" onClick={circleHandler}>
@@ -21,7 +25,26 @@ function App() {
           <div className={!overlap ? "circle-child7" : "circle circle7"}></div>
           <div className={!overlap ? "circle-child8" : "circle circle8"}></div>
         </div>
+        <div style={{ display: "flex", gap: "10px" }}>
+          {head.split("").map((he, i) => {
+            return (
+              <h1
+                className="leSnake"
+                key={i}
+                style={{
+                  animationName: "lePeek", // Set the animation name
+                  animationDuration: "1.5s", // Adjust the duration as needed
+
+                  animationDelay: `${i * 0.1}s`, // Staggered delay based on index
+                }}
+              >
+                {he}
+              </h1>
+            );
+          })}
+        </div>
       </div>
+      <Login />
     </div>
   );
 }

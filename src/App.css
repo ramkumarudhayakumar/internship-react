@@ -134,3 +134,16 @@
   justify-content: center;
   gap: 50px;
 }
+.leSnake {
+  font-size: 10rem;
+  /* display: inline-block; */
+}
+@keyframes lePeek {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+}

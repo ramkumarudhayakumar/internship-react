@@ -1,0 +1,87 @@
+.login-section {
+  background-color: #fff;
+  width: 100vw;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-col {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+  border-radius: 20px;
+  color: var(--color);
+  font-weight: bold;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 50px 100px;
+}
+.buttons {
+  display: block;
+  width: 100%;
+  background-color: var(--color);
+  color: var(--background-color);
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+}
+.buttons:hover {
+  border: 1px solid var(--color);
+}
+.login-a {
+  font-weight: 0;
+  opacity: 0.5;
+}
+.form-group-1,
+.form-group-2 {
+  font-weight: 500;
+}
+.login-line {
+  width: 45%;
+  height: 0.1px;
+  background-color: var(--color);
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+}
+.login-or {
+  width: 10%;
+  height: 20px;
+  border: 0.1px solid var(--color);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+}
+.login-continue-with-google {
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color);
+  border-radius: 20px;
+  height: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+.login-continue-with-google:hover {
+  border: 1px solid var(--color);
+  background-color: var(--color);
+  color: var(--background-color);
+}
+.google-icon {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+}
+@media screen and (max-width: 576px) {
+  .login-col {
+    padding: 50px 50px;
+  }
+}
